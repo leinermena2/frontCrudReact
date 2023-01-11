@@ -38,23 +38,23 @@ const CreateProduct = () => {
         <form onSubmit={store}>
             <div className='mb-3'>
                 <label for='form-label'>Sku</label>
-                <input value={sku} onChange={(e) => setSku(e.target.value)} type='text' className='form-control rounded-pill mt-1' />
+                <input value={sku} onChange={(e) => setSku(e.target.value)} type='text' className='form-control rounded-pill mt-1 needs-validation' />
             </div>
             <div className='mb-3'>
                 <label for='form-label'>Name</label>
-                <input value={name} onChange={(e) => setName(e.target.value)} type='text' className='form-control rounded-pill mt-1' />
+                <input value={name} onChange={(e) => setName(e.target.value)} type='text' className='form-control rounded-pill mt-1 needs-validation' />
             </div>
             <div className='mb-3'>
                 <label for='form-label'>Description</label>
-                <input value={description} onChange={(e) => setDescription(e.target.value)} type='text' className='form-control rounded-pill mt-1' />
+                <input value={description} onChange={(e) => setDescription(e.target.value)} type='text' className='form-control rounded-pill mt-1 needs-validation' />
             </div>
             <div className='mb-3'>
                 <label for='form-label'>Stock</label>
-                <input value={stock} onChange={(e) => setStock(e.target.value)} type='text' className='form-control rounded-pill mt-1' />
+                <input value={stock} onChange={(e) => setStock(e.target.value)} type='text' className='form-control rounded-pill mt-1 needs-validation' />
             </div>
             <div className='mb-3'>
                 <label for='form-label'>Price</label>
-                <input value={price} onChange={(e) => setPrice(e.target.value)} type='text' className='form-control rounded-pill mt-1' />
+                <input value={price} onChange={(e) => setPrice(e.target.value)} type='text' className='form-control rounded-pill mt-1 needs-validation' />
             </div>
             <div className='d-grid gap-2'>
             <button type="submit" className='btn btn-primary btn rounded-pill'>Create</button>
