@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import NavBar from './NavBar'
+import NavBar from '../../components/NavBar'
 import Swal from 'sweetalert2'
 
 
@@ -21,11 +21,11 @@ const CreateProduct = () => {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Your item has been deleted',
             showConfirmButton: false,
             timer: 1500
           })
-        navigate('/')
+        navigate('/items')
     }
     return (
 

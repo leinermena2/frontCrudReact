@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
-import NavBar from './NavBar'
+import NavBar from '../../components/NavBar'
 import Swal from 'sweetalert2'
 
 
@@ -27,7 +27,7 @@ const EditProduct = () => {
             showConfirmButton: false,
             timer: 1500
           })
-        navigate('/')
+        navigate('/items')
     }
 
     useEffect( ()=>{
